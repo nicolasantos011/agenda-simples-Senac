@@ -64,7 +64,12 @@ namespace AgendaSimplesT5
             // melhor utilizar uma string.empty invés de "".
             string saida = String.Empty;
             saida += String.Format("{0}, {1}", PrimeiroNome, Sobrenome);
-            saida += String.Format("{0}-{1}-{2}", telefone.Substring(0,1), telefone.Substring(2, 6), telefone.Substring(7, 10));
+            saida += String.Format("{0}-{1}-{2}", 
+                telefone.Substring(0,2), 
+                telefone.Substring(2, 5), 
+                telefone.Substring(7, 4));
+            return saida;
+
         }
     }
     
